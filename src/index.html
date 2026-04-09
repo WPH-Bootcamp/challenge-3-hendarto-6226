@@ -6,12 +6,236 @@
     <title>Assignment 3 - Landing Page</title>
     <!-- Tailwind -->
     <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <!-- ========== NAVBAR ========== -->
+  <body class="bg-black text-white" font-family="Inter, sans-serif">
+    <nav class="p-8 flex items-center justify-between max-w-7xl mx-auto">
+      <div class="text-2xl font-bold" bg text-white>Tech.</div>
+      <ul class="md:flex space-x-8 text-sm font-[14px]] text-zinc-400">
+        <li><a href="#" class="hover:text-white transition">About</a></li>
+        <li><a href="#" class="hover:text-white transition">Service</a></li>
+        <li><a href="#" class="hover:text-white transition">Our Work</a></li>
+        <li><a href="#" class="hover:text-white transition">Team</a></li>
+      </ul>
+      <button class="bg-indigo-600 px-6 py-2 rounded-full text-[16px]">
+        Contact Us
+      </button>
+    </nav>  
 
-    <!-- ========== HERO SECTION ========== -->
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-[85vh] flex flex-col md:flex-row items-center px-8 max-w-7xl mx-auto color-gradient-to-r from-black to-purple-900 py-12"
+    >
+      <div class="md:w-1/2 z-10 space-y-8">
+        <h1 class="text-3xl md:text-3xl lg:3xl font-bold">
+          Build with the
+          <span class="italic text-white">Future.</span>
+        </h1>
+        <p class="text-zinc-400 text-[20px] max-w-md leading-relaxed">
+          From building sleek websites and mobile apps to integrating AI
+          solutions, we help brands turn ideas into powerful digital
+          experiences that connect, engage, and scale.
+        </p>
+        <button
+          class="bg-indigo-600 px-8 py-2 text-whiterounded-full text-[16px]"
+        > Let's Talk
+        </button>
+      </div> 
+      <img class="object-left" src="../assets/images/Handtech.png" alt="Technology Advancement"></img>      
+    </section>
 
-    <!-- ========== FOOTER ========== -->
+    <!-- Who We Are Section -->
+     
+    <section class=" py-32 px-8 max-w-7xl mx-auto">
+      <div class="text-center mb-20">
+        <h2 class="text-4xl font-bold mb-4">Who We Are</h2>       
+        <br>
+        <div class="text-zinc-400 text-center mt-4 text-[32px]">
+        We are a group of tech students trained in <span class="text-white font-bold">building real-world digital products.</span>
+        <br>
+        From coding to design, we <craft class="text-white font-bold">craft modern solutions for modern problems.</span>
+      </div>
+    </section>
+
+    <!-- What We Do Section-->
+    <section class="py-8 px-8 max-w-7xl mx-auto">
+      <div class="text-center mb-20">
+        <h2 class="text-4xl font-bold mb-4">What We Do</h2>
+        <p class="text-zinc-500">
+          We offer unique tech solutions to help your ideas glow.
+        </p>
+      </div>
+
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Web Development  -->
+        <div class="bg-zinc-900/50 border border-zinc-800 p-10">
+          
+          <img class="mx-auto" src="../assets/icons/A2_Web_Dev.png" alt="Web Development"></img>
+          <h3 class="text-xl font-bold mb-4 text-center">Web Development</h3>
+          <p class="text-zinc-500 leading-relaxed text-sm text-center">
+            Modern websites using HTML, CSS, JavaScript, and frameworks.
+          </p>
+        </div>
+
+        <!-- App Development -->
+        <div class="bg-zinc-900/50 border border-zinc-800 p-10">
+          
+          <img class="mx-auto" src="../assets/icons/A2_App_Dev.png" alt="Application Development"></img>
+          <h3 class="text-xl font-bold mb-4 text-center">App Development</h3>
+          <p class="text-zinc-500 leading-relaxed text-sm text-center">
+            Mobile and desktop apps tailored for your needs.
+          </p>
+        </div>
+
+        <!-- AI Integration -->
+        <div class="bg-zinc-900/50 border border-zinc-800 p-10">
+          
+          <img class="mx-auto" src="../assets/icons/A2_AI_Integration.png" alt="AI Integration"></img>
+          <h3 class="text-xl font-bold mb-4 text-center">AI Integration</h3>
+          <p class="text-zinc-500 leading-relaxed text-sm text-center">
+            Smart solutions using AI-powered tools and automation.
+          </p>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="bg-zinc-900/50 border border-zinc-800 p-10">
+          <img class="mx-auto" src="../assets/icons/A2_UI_UX_Design.png" alt="UI/UX Design"></img>
+          <h3 class="text-xl font-bold mb-4 text-center">UI/UX Design</h3>
+          <p class="text-zinc-500 leading-relaxed text-sm text-center">
+            Clean and functional designs for better user experience.
+          </p>
+        </div>
+
+        <!-- Landing Page Design -->  
+        <div class="bg-zinc-900/50 border border-zinc-800 p-10">
+          <img class="mx-auto" src="../assets/icons/A2_LandingPageDesign.png" alt="Landing Page Design"></img>
+          <h3 class="text-xl font-bold mb-4 text-center">Landing Page Design</h3>
+          <p class="text-zinc-500 leading-relaxed text-sm text-center">
+            High-converting landing pages for your product or business.
+          </p>
+        </div>
+
+        <!-- CMS Integration -->
+        <div class="bg-zinc-900/50 border border-zinc-800 p-10">
+          <img class="mx-auto" src="../assets/icons/A2_CMS_Integration.png" alt="CMS Integration"></img>
+          <h3 class="text-xl font-bold mb-4 text-center">CMS Integration</h3>
+          <p class="text-zinc-500 leading-relaxed text-sm text-center">
+            Easy-to-manage websites with WordPress or Webflow.
+          </p>
+        </div>     
+      </div>
+    </section>
+    <!-- End of What We Do Section -->
+
+    <!-- Our Work-->
+     <section class="py-2 px-8 max-w-7xl mx-auto">
+      <div class="text-center mb-20">
+        <h2 class="text-4xl font-bold mb-4">Our Work</h2>
+        <p class="text-zinc-500">See What we've built with passion and purpose.</p>
+      </div>
+
+      <!-- Portfolios -->
+      <div class="flex flex-wrap justify-content flex-1 gap-2 w-full">
+        <!-- Portfolio 1  -->
+        <div class="bg-black">
+          
+          <img class="mx-auto border rounded-2xl" src="../assets/images/Portofolio1.png" alt="Portfolio 1"></img>
+          <h3 class="text-xl font-bold mb-4 text-left">Portfolio 1</h3>
+          
+        </div>
+
+        <!-- Portofolio 2 -->
+        <div class="bg-zinc-900/50 border border-zinc-800">
+          <img class="mx-auto border rounded-2xl" src="../assets/images/Portofolio2.png" alt="Portfolio 2"></img>
+          <h3 class="text-xl font-bold mb-4 text-left">Portofolio 2</h3>
+        </div>
+
+        <!-- Portofolio 3 -->
+        <div class="bg-zinc-900/50 border border-zinc-800">        
+          <img class="mx-auto border rounded-2xl" src="../assets/images/Portofolio3.png" alt="Portfolio 3"></img>
+          <h3 class="text-xl font-bold mb-4 text-left">Portofolio 3</h3>        
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section class="py-32 px-4 max-w-7xl mx-auto">
+      <div class="text-center mb-20">
+        <h2 class="text-4xl font-bold mb-4">Meet the Team</h2>
+        <p class="text-zinc-500">Get to know the talented individuals behind our success.</p>
+      </div>
+
+      <div class="flex flex-wrap justify-content flex-1 gap-2 w-full">
+        <!-- Team Member 1 -->
+        <div class="bg-zinc-900/50 border border-zinc-800 p-10 rounded-3xl text-center">
+          <img class="mx-auto rounded-full mb-4" src="../assets/images/Jasper_Kim.png" alt="Project Manager"></img>
+          <h3 class="text-xl font-bold mb-2">Jasper Kim</h3>
+          <p class="text-zinc-500 text-sm">Project Manager</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="bg-zinc-900/50 border border-zinc-800 p-10 rounded-3xl text-center">
+          <img class="mx-auto rounded-full mb-4" src="../assets/images/Alex_Jonathan.png" alt="Full-stack Dev"></img>
+          <h3 class="text-xl font-bold mb-2">Alex Jonathan</h3>
+          <p class="text-zinc-500 text-sm">Full-stack Developer</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="bg-zinc-900/50 border border-zinc-800 p-10 rounded-3xl text-center">
+          <img class="mx-auto rounded-full mb-4" src="../assets/images/Mario_Lopez.png" alt="UI/UX Designer"></img>
+          <h3 class="text-xl font-bold mb-2">Mario Lopez</h3>
+          <p class="text-zinc-500 text-sm">UI/UX Designer</p>
+        </div>
+        <div class="bg-zinc-900/50 border border-zinc-800 p-10 rounded-3xl text-center">
+          <img class="mx-auto rounded-full mb-4" src="../assets/images/Jasper_Kim 2.png" alt="Data Scientist"></img>
+          <h3 class="text-xl font-bold mb-2">Jasper Kim</h3>
+          <p class="text-zinc-500 text-sm">Data Scientist</p>
+        </div>
+      </div>
+    </section>
+<!-- End of Meet the Team Section -->
+
+    <!-- Let's Collaborate Section --> 
+     <section class=" px-2 max-w-2xl mx-auto">
+      <div class="text-center mb-20">
+        <h2 class="text-4xl font-bold mb-4">Let's Collaborate</h2>
+        <p class="text-zinc-500">Need a tech team? We're ready to help</p>
+      </div>
+
+    <form class="text-left space-y-6">
+      <div>
+        <label class="block text-sm font-semibold mb-2 ml-1">Name</label>
+        <input type="text" placeholder="Enter your name" 
+               class="w-full bg-black border border-gray-800 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-600 transition">
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold mb-2 ml-1">Email</label>
+        <input type="email" placeholder="Enter your email" 
+               class="w-full bg-black border border-gray-800 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-600 transition">
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold mb-2 ml-1">Message</label>
+        <textarea placeholder="Enter your message" rows="5"
+                  class="w-full bg-black border border-gray-800 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-600 transition resize-none"></textarea>
+      </div>
+
+      <button type="submit" 
+              class="w-full bg-indigo-700 text-white font-bold py-4 rounded-full">
+        Send
+      </button>
+      
+    </form>
+  </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center text-zinc-500 text-sm ">
+      © 2025 Web Programming Hack. All rights reserved.
+    </footer>
   </body>
 </html>
